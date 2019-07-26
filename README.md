@@ -42,7 +42,54 @@ No picture u say a j8!
     public final static int START = 8;//抽屉开始移动
     public final static int MOVING = 9;//抽屉移动中
     public final static int END = 10;//抽屉移动结束
+    
+    
+Api:
 
+    /**
+     * 设置抽屉方向
+     */
+    public void setGravity(int gravity)
+    
+    /**
+     * 获取抽屉方向
+     */
+    public int getGravity()
+    
+    /**
+     * 打开抽屉
+     */
+    public void openDrawer(int gravity)
+    
+    /**
+     * 关闭抽屉
+     */
+    public void closeDrawers()
+    
+    /**
+     * 设置抽屉尺寸（0f-1f）
+     */
+    public void setDrawerPercent(float drawerPercent) 
+    
+    /**
+     * 获取抽屉的状态
+     */
+    public int getDrawerStatus()
+    
+    /**
+     * 贝塞尔颜色是否依附抽屉背景色
+     */
+    public void setAttachDrawerColor(boolean attachDrawerColor)
+    
+    /**
+     * 设置抽屉背景色
+     */
+    public void setBackgroundColor(@ColorInt int color)
+    
+    /**
+     * 设置贝塞尔颜色
+     */
+    public void setBesselColor(int alpha, int red, int green, int blue)
   
  over
 
