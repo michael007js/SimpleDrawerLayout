@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.sss.simpleDrawerLayout.SimpleDrawerLayout
+        android:id="@+id/simpleDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <TextView
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:text="Hello SimpleDrawerLayout!" />
+
+
+          <Button
+              android:text="从右拉出（默认）"
+              android:onClick="fromRight"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:text="从左拉出"
+              android:onClick="fromLeft"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:text="从上拉出"
+              android:onClick="fromTop"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:text="从下拉出"
+              android:onClick="fromBottom"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:text="随机贝塞尔颜色"
+              android:onClick="color"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:text="抽屉背景色"
+              android:onClick="drawerColor"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+     <LinearLayout
+         android:background="@mipmap/ic_launcher"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:orientation="vertical">
+
+
+         <TextView
+             android:background="#ff0"
+             android:gravity="center"
+             android:text="@string/app_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <Button
+             android:text="调整抽屉比例"
+             android:onClick="percent"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+    </com.sss.simpleDrawerLayout.SimpleDrawerLayout>
+
+
+</android.support.constraint.ConstraintLayout>
